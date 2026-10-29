@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emanuele Naldi</title>
+  <meta name="description" content="Emanuele Naldi — researcher at the Department of Mathematics, University of Genoa (MaLGa).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    window.MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }, svg: { fontCache: 'global' } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Emanuele Naldi</a>
+    <nav class="nav">
+      <a href="index.html" aria-current="page">Home page</a>
+      <a href="research.html">Research</a>
+      <a href="others.html">Others</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <img src="assets/img/photo.jpg" alt="Emanuele Naldi">
+    <div>
+      <h1>Emanuele Naldi</h1>
+      <p>I am a researcher at the department of mathematics of the University of Genoa. I am also part of the <a href="https://malga.unige.it/">MaLGa</a> research group, under the supervision of Prof. <a href="https://rubrica.unige.it/personale/UkNHXVlo">Silvia Villa</a>.</p>
+      <p>Before joining the University of Genoa I did my PhD in Braunschweig (Germany) in the research group of Prof. <a href="https://www.math.uni-bremen.de/zetem/cms/detail.php?template=parse_title&amp;person=DirkLorenz&amp;language=en">Dirk Lorenz</a>. The position was within the <a href="https://trade-opt-itn.eu/">TraDE-OPT project</a>, funded by ITN Marie Skłodowska-Curie Action. My PhD thesis is about "Investigating degenerate preconditioners for proximal point algorithms".</p>
+      <p>My wife is also a mathematician! See <a href="https://sites.google.com/view/bartoluccifrancesca">Francesca Bartolucci</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="news">
+      <span class="badge new">New</span>
+      <div>
+        <p><span class="label">Talks:</span><br><strong>8 July 2026:</strong> talk at EUROPT 2026, Linz, Austria</p>
+        <p><strong>On 13 March 2026, I became a dad to a beautiful baby boy ❤️</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="cards">
+
+      <article class="card">
+        <span class="badge">Out Now!</span>
+        <p><span class="paper-title">On the stability of proximal operators in Wasserstein spaces under different notions of convexity</span><br>
+        with Simone Di Marino and Sara Farinelli. <a href="https://doi.org/10.48550/arXiv.2607.08209" target="_blank" rel="noopener noreferrer">arXiv preprint</a></p>
+        <p>The proximal operator is a central tool in variational analysis and optimization. In Hilbert spaces, convexity makes it 1-Lipschitz. In Wasserstein spaces, the geometry is different and comparable stability properties are not fully understood.</p>
+        <p>In \((\mathcal{P}_2(\mathbb{R}^d), W_2)\), the proximal operator with step \(\tau&gt;0\) is</p>
+        \[ \operatorname{prox}_{\tau F}^{W}(\mu) := \mathop{\arg\min}_{\nu \in \mathcal{P}_2(\mathbb{R}^d)} \left\{ F(\nu) + \frac{1}{2\tau} W_2^2(\mu, \nu) \right\}. \]
+        <p>We study how different notions of convexity control the stability of this map.</p>
+        <ul>
+          <li>For functionals convex along generalized geodesics, we prove local \(1/2\)-Hölder continuity.</li>
+          <li>We introduce convexity along <em>2-base generalized geodesics</em> and show that it yields a 1-Lipschitz proximal map.</li>
+          <li>We also prove conditional \((1+\delta)\)-Lipschitz estimates near Dirac masses or minimizers.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="badge">Out Now!</span>
+        <p><span class="paper-title">Langevin for Nonconvex Optimization: Exact, Inexact and Zeroth-Order</span><br>
+        with Marco Rando, Lorenzo Rosasco and Silvia Villa. <a href="https://doi.org/10.48550/arXiv.2607.22353" target="_blank" rel="noopener noreferrer">arXiv preprint</a></p>
+        <p>Langevin methods add Gaussian noise to gradient descent, helping the algorithm explore nonconvex landscapes. We study their global optimization guarantees under smoothness and dissipativity assumptions.</p>
+        <p>The exact-gradient Langevin step is</p>
+        \[ x_{k+1} = x_k-\gamma\nabla F(x_k) +\sqrt{2\gamma\beta^{-1}}\,z_k, \qquad z_k\sim\mathcal{N}(0,I_d). \]
+        <ul>
+          <li>We convert relative entropy directly into objective-value error, avoiding intermediate Wasserstein bounds.</li>
+          <li>We derive non-asymptotic excess-risk bounds for exact and inexact Langevin algorithms.</li>
+          <li>For Gaussian and spherical finite-difference estimators, we obtain explicit zeroth-order function-evaluation complexity bounds.</li>
+        </ul>
+      </article>
+
+      <article class="card wide">
+        <div>
+          <span class="badge">Out Now!</span>
+          <p><span class="paper-title">Convergence of zeroth-order proximal point algorithms in the high-temperature regime</span><br>
+          with Hippolyte Labarrière, Cesare Molinari and Silvia Villa. <a href="https://doi.org/10.48550/arxiv.2605.11929" target="_blank" rel="noopener noreferrer">arxiv preprint</a></p>
+          <p>We study zeroth-order proximal point algorithms in the fixed positive-temperature regime. Unlike vanishing-temperature analyses, we interpret ZOPPA at fixed temperature as an exact proximal-point method for a smoothed auxiliary objective.</p>
+          <p>The zeroth-order proximal operator (ZOPO) is</p>
+          \[ \operatorname{zprox}_{\lambda,f}^{\delta}(x) = \frac{ \mathbb{E}_{Y\sim\mathcal{N}(x,\lambda\delta I)} \left[ Y\exp\left(-f(Y)/\delta\right) \right] }{ \mathbb{E}_{Y\sim\mathcal{N}(x,\lambda\delta I)} \left[ \exp\left(-f(Y)/\delta\right) \right] }. \]
+          <p>ZOPPA then iterates</p>
+          \[ x^{k+1} = \operatorname{zprox}_{\lambda,f}^{\delta}(x^k). \]
+        </div>
+        <figure>
+          <img src="assets/img/zoppa_plot.jpg" alt="Plot comparing the true prox, the true value of ZOPO and S-ZOPO (N=5000) as a function of delta">
+        </figure>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Main research interests:</h2>
+    <ul class="plain">
+      <li>Nonconvex optimization via zeroth order and Langevin methods</li>
+      <li>Optimal transport and optimization algorithms in spaces of measures</li>
+      <li>Splitting and distributed methods for (convex or weakly convex) optimization</li>
+      <li>Learning regularizers for Plug-and-Play methods</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Selected publications:</h2>
+    <ul class="pubs">
+      <li>Weak topology and Opial property in Wasserstein spaces, with applications to gradient flows and proximal point algorithms of geodesically convex functionals (with Giuseppe Savaré). Atti Accad. Naz. Lincei Cl. Sci. Fis. Mat. Natur. 32, 725-750 (2021). <a href="https://doi.org/10.4171/rlm/955">https://doi.org/10.4171/rlm/955</a></li>
+      <li>A Lipschitz spaces view of infinitely wide shallow neural networks (with Francesca Bartolucci, Marcello Carioni, José A. Iglesias, Yury Korolev, Stefano Vigogna). SIAM Journal on Mathematical Analysis 58 (3), 2786-2828 (2026). <a href="https://doi.org/10.1137/24M1718615">https://doi.org/10.1137/24M1718615</a></li>
+      <li>Graph and distributed extensions of the Douglas–Rachford method (with Kristian Bredies and Enis Chenchene). SIAM Journal on Optimization 34 (2), 1569-1594 (2024). <a href="https://doi.org/10.1137/22M1535097">https://doi.org/10.1137/22M1535097</a></li>
+      <li>Degenerate Preconditioned Proximal Point algorithms (with Kristian Bredies, Enis Chenchene and Dirk Lorenz). SIAM Journal on Optimization, vol. 32, no. 3, pp. 2376–2401 (2022). <a href="https://doi.org/10.1137/21M1448112">https://doi.org/10.1137/21M1448112</a></li>
+      <li>Splitting the Forward-Backward Algorithm: A Full Characterization (with Anton Åkerman, Enis Chenchene and Pontus Giselsson). arXiv preprint (2024). <a href="https://doi.org/10.48550/arXiv.2504.10999">https://doi.org/10.48550/arXiv.2504.10999</a></li>
+      <li>Learning Firmly Nonexpansive Operators (with Kristian Bredies and Jonathan Chirinos-Rodriguez). arXiv preprint (2024). <a href="https://doi.org/10.48550/arXiv.2407.14156">https://doi.org/10.48550/arXiv.2407.14156</a></li>
+    </ul>
+
+    <h2 style="margin-top:44px">Short Curriculum Vitae:</h2>
+    <ul class="plain">
+      <li>From November 2023: Postdoc researcher (assegnista di ricerca), University of Genoa, Italy</li>
+      <li>January 2025: PhD in Applied Mathematics, Marie Skłodowska-Curie Action ITN Doctoral fellowship, TU Braunschweig</li>
+      <li>July 2020: MSc degree in Applied Mathematics, University of Pavia</li>
+      <li>September 2018: BSc degree in Mathematics, University of Pavia</li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Contacts:</h2>
+    <p><a href="mailto:emanuele.naldi@edu.unige.it">emanuele.naldi@edu.unige.it</a></p>
+    <p>Dipartimento di Matematica, Università Degli Studi di Genova, Via Dodecaneso, 35, 16146 Genova, Italy</p>
+    <p style="margin-top:18px"><strong>Links:</strong> <a href="https://scholar.google.com/citations?user=Q-RhkkMAAAAJ&amp;hl=it">Google scholar</a> - <a href="https://www.researchgate.net/profile/Emanuele-Naldi-2">Research Gate</a> - <a href="https://orcid.org/0000-0002-2437-2832">ORCID</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <blockquote>"La sapienza è un bene comune e tutti sono chiamati a comunicarla agli altri, perchè la sua ricchezza non diminuisce ma aumenta quando è condivisa"<cite>Ennio De Giorgi</cite></blockquote>
+  </div>
+</footer>
+
+</body>
+</html>
